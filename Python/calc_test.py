@@ -18,10 +18,9 @@ class TestCalculadora(unittest.TestCase):
     def test_divisao(self):
         self.assertEqual(divisao(10, 2), 5)
         self.assertEqual(divisao(-9, 3), -3)
-        # Teste de erro (divisor zero)
         self.assertEqual(divisao(5, 0), "Erro!")
-        # Teste de erro (numerador zero)
         self.assertEqual(divisao(0, 4), "Erro!")
 
     if __name__ == '__main__':
         unittest.main()
+
