@@ -20,7 +20,8 @@ class TestCalculadora(unittest.TestCase):
         self.assertEqual(divisao(-9, 3), -3)
         self.assertEqual(divisao(5, 0), "Erro!")
         self.assertEqual(divisao(0, 4), "Erro!")
+        
+if __name__ == '__main__':
+    unittest.main()
 
-    if __name__ == '__main__':
-        unittest.main()
 
