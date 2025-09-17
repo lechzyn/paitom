@@ -12,38 +12,45 @@ def divisao(a,b):
         return a/b
 
 def menu():
-    print("1 - Soma")
-    print("2 - Subtracao")
-    print("3 - Multiplicacao")
-    print("4 - Divisao")
-    print("5 - Sair")
+    while True:
+        print("1 - Soma")
+        print("2 - Subtracao")
+        print("3 - Multiplicacao")
+        print("4 - Divisao")
+        print("5 - Sair")
 
-    decisao = input("O que deseja realizar? ")
-    numero1 = float(input("Digite o primeiro valor: "))
-    numero2 = float(input("Digite o segundo valor: "))
+        decisao = input("O que deseja realizar? ")
+        if (decisao == "5"):
+            print("Saindo do programa...")
+            break
 
-    if(decisao == "1"):
-        resultado = soma(numero1, numero2)
-        print(resultado)
-    elif(decisao == "2"):
-        resultado = subtracao(numero1, numero2)
-        print(resultado)
-    elif(decisao == "3"):
-        resultado = multiplicacao(numero1, numero2)
-        print(resultado)
-    elif(decisao == "4"):
-        resultado = divisao(numero1, numero2)
-        print(resultado)
-    elif(decisao == "5"):
-        print("Saindo do programa...")
-    else:
-        print("Digito invalido!")
-        menu()
+        numero1 = float(input("Digite o primeiro valor: "))
+        numero2 = float(input("Digite o segundo valor: "))
+
+        if(decisao == "1"):
+            resultado = soma(numero1, numero2)
+            print(resultado)
+            print("")
+        elif(decisao == "2"):
+            resultado = subtracao(numero1, numero2)
+            print(resultado)
+            print("")
+        elif(decisao == "3"):
+            resultado = multiplicacao(numero1, numero2)
+            print(resultado)
+            print("")
+        elif(decisao == "4"):
+            resultado = divisao(numero1, numero2)
+            print(resultado)
+            print("")
+
+        else:
+            print("Digito invalido!")
+
 
 
 if __name__ == "__main__":
     menu()
-
 
 
 
