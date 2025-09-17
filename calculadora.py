@@ -10,10 +10,3 @@ def divisao(a,b):
         return "Erro!"
     else:
         return a/b
-
-if __name__ == "__main__":
-    menu()
-
-
-
-
